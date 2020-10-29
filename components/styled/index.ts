@@ -15,13 +15,17 @@ import {
   color,
   position,
   border,
+  display,
   margin,
   padding,
   flexbox,
   width,
+  layout,
+  grid
 } from "styled-system";
 
 export const Width = styled.div`
+  ${border}
   ${width}
   ${margin}
   ${color}
@@ -30,11 +34,11 @@ export const Width = styled.div`
 `;
 
 export const Wrap = styled.div`
-  width: 90%;
-  max-width: 840px;
-  margin: 0 auto;
-
+  ${display}
+  ${flexbox}
+  ${grid}
   ${width}
+  ${layout}
   ${border}
   ${padding}
   ${margin}`;

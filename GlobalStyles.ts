@@ -14,8 +14,10 @@ const GlobalStyles = createGlobalStyle`
 
   html, body {
     margin: 0 !important;
-    font-family: 'porpora', Tahoma, Geneva, sans-serif;
+    font-family: 'Necto Mono', Tahoma, Geneva, sans-serif;
+    letter-spacing: -0.2em
     font-size: 10px;
+    background: #FAFAFA;
   }
 
   html {
@@ -27,6 +29,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+
+  a:link {
+    color: #111;
+    text-decoration: none;
   }
 
   * {
