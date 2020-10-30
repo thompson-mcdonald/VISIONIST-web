@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     background-attachment: fixed;
   }
 
-  a:link {
+  a:link, a:visited {
     color: #111;
     text-decoration: none;
   }

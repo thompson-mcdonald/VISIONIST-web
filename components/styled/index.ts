@@ -40,6 +40,7 @@ export const Wrap = styled.div`
   ${width}
   ${layout}
   ${border}
+  ${position}
   ${padding}
   ${margin}`;
 

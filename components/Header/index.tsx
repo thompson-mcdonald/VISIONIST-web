@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const HeaderWrap = styled.header`
   text-align: center;
-  padding: 20px 0;
+  padding: 4rem 0 3rem;
   grid-area: header;
   img {
     max-width: 180px;

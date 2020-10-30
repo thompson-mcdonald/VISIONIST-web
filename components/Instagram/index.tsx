@@ -22,6 +22,9 @@ const PostsWrapper = styled.div`
 `;
 
 const Post = styled.img`
+  @media (max-width: 650px) {
+    min-width: 300px;
+  }
   width: 50%;
   padding: .5rem;
 `;

@@ -1,4 +1,4 @@
-const url = `https://www.instagram.com/graphql/query/?query_hash=56a7068fea504063273cc2120ffd54f3&variables={"id":"265273024","first":4}`
+const url = `https://www.instagram.com/graphql/query/?query_hash=56a7068fea504063273cc2120ffd54f3&variables={"id":"265273024","first":8}`
 
 const cache = {
   lastFetch: 0,

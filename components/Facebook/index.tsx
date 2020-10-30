@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SectionHeader from "../SectionHeader"
 
 const FacebookWrap = styled(Wrap)`
+  width: 100%;
   @media (min-width: 750px) {
     width: 50%;
   }

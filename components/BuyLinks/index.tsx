@@ -26,7 +26,7 @@ const LinkOuter = styled.div`
 function BuyLinks():JSX.Element {
   return (
     <Wrap justifySelf="start" display="flex" alignItems="center" gridArea="buy-links" border={["none", "1px solid #888"]} width="100%">
-      <LinkOuter borderRight="1px solid #888">
+      <LinkOuter borderRight={["none", "none", "1px solid #888"]}>
         <BuyLink href="#">Buy Merch</BuyLink>
       </LinkOuter>
       <LinkOuter>
