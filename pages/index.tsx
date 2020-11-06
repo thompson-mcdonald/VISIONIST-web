@@ -24,9 +24,11 @@ function Home({events, homePage}): JSX.Element {
 
   return (
     <GridOuter>
-      <Wrap justifySelf="start" gridArea="center" width="100%" pl={[0, 0, 4]} pr={[0, 0, 4]} pt={[0, 0, 4]} position={["static", "static", "relative"]}>
+      <Wrap justifySelf="start" gridArea="center" width="100%" pt={[0, 0, 4]} style={{ textAlign: "center" }} position={["static", "static", "relative"]}>
         <Header/> 
-        <Video pt={[4, 4, 4]} />
+        <Video pt={[4, 4, 4]} pr={[4, 4, 4]} pl={[4, 4, 4]}>
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/utTditmR1vo?playlist=utTditmR1vo&controls=0&loop=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </Video>
         <MailingList />
         {isDesktop && 
           <Wrap position={["static", "static", "absolute"]} bottom={[0, 0 , 3]}>
@@ -36,19 +38,22 @@ function Home({events, homePage}): JSX.Element {
       </Wrap>
       <PageNavigation />
       <BuyLinks />
-      <Video title="view" borderTop="none" borderBottom="none" border="1px solid #888" />
-      <Instagram />
-      <Wrap justifySelf="start" gridArea="fb-tw" display={["block", "block", "flex"]} width="100%">
+        <Video id="view" title="view" borderTop="none" borderBottom="none" border="1px solid #888">
+          <iframe width="100%" height="282" src="https://www.youtube.com/embed/utTditmR1vo?playlist=utTditmR1vo&controls=0&loop=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </Video>
         <Facebook />
+        {isMobile && <Instagram />}
+      <Wrap justifySelf="start" gridArea="ig-tw" display={["none", "block", "flex"]} width="100%">
+        <Instagram />
         <Twitter />
-      </Wrap>
+      </Wrap>       
       <Spotify />
       <Wrap display={["block", "block", "flex"]} justifySelf="start" gridArea="bottom-right" width="100%">
         <EventWrapper events={events} />
         <SlideShow />
       </Wrap>
       {isMobile && 
-        <Wrap>
+        <Wrap className="about">
           <About /> 
         </Wrap>
       }

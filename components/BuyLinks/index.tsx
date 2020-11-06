@@ -17,15 +17,19 @@ const BuyLink = styled.a`
 
 const LinkOuter = styled.div`
   height: 100%;
-  width: 50%;
   display: flex;
   align-items: center;
+  flex-direction: row;
+  @media (min-width: 750px) {
+    width: 50%;
+    flex-direction: column;
+  }
   ${border}
 `;
 
 function BuyLinks():JSX.Element {
   return (
-    <Wrap justifySelf="start" display="flex" alignItems="center" gridArea="buy-links" border={["none", "1px solid #888"]} width="100%">
+    <Wrap  id="buy" justifySelf="start" display="flex" alignItems="center" gridArea="buy-links" border={["none", "1px solid #888"]} width="100%" flexDirection={["column", "column", "row"]}>
       <LinkOuter borderRight={["none", "none", "1px solid #888"]}>
         <BuyLink href="#">Buy Merch</BuyLink>
       </LinkOuter>

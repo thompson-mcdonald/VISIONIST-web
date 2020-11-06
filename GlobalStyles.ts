@@ -24,6 +24,10 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
+  #__next {
+    scroll-behaviour: smooth;
+  }
+
   body {
     height: 100%;
     margin: 0;

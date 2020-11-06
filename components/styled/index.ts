@@ -42,7 +42,8 @@ export const Wrap = styled.div`
   ${border}
   ${position}
   ${padding}
-  ${margin}`;
+  ${margin}
+`;
 
 export const WrapFlex = styled.div`
     display: flex;

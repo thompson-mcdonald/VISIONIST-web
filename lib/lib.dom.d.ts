@@ -8,6 +8,7 @@ interface HTMLIFrameElement extends HTMLElement {
   allow: string;
   allowFullscreen: boolean;
   allowPaymentRequest: boolean;
+  frameBorder: string;
   /**
    * Retrieves the document object of the page or frame.
    */

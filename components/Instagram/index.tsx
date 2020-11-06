@@ -8,6 +8,7 @@ const InstagramWrapper = styled(Wrap) `
   max-height: 400px;
   @media (min-width: 750px) {
     max-height: none;
+    width: 50%;
   }
 `;
 
@@ -25,7 +26,7 @@ const Post = styled.img`
   @media (max-width: 650px) {
     min-width: 300px;
   }
-  width: 50%;
+  width: 100%;
   padding: .5rem;
 `;
 
@@ -44,8 +45,8 @@ function GetInstagramPosts() {
 function Instagram({}):JSX.Element {
   const IGPosts = GetInstagramPosts();
   return (
-    <InstagramWrapper justifySelf="start" gridArea="instagram" border={["none", "1px solid #888"]} overflowY="scroll">  
-      <SectionHeader url="https://twitter.com/__VISIONIST" username="VISIONIST____" name="Instagram"></SectionHeader>
+    <InstagramWrapper justifySelf="start" border={["none", "none", "1px solid #888"]} borderRight={["none", "none", "none"]} position={["static", "static", "relative"]} overflowY="scroll" pt={[3, 3, 0]} mt={[3, 2, 0]} pb={[3, 2, 0]} mb={[3, 2, 0]}>  
+      <SectionHeader url="https://twitter.com/__VISIONIST" username="VISIONIST____" name="Instagram" position={["static", "static", "fixed"]} zIndex="4" style={{ marginLeft:"-1px" }} />
       <PostsWrapper>
         {IGPosts && IGPosts.map(i => (
           <a href={i.url} key={i.id}>

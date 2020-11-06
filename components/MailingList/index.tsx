@@ -3,7 +3,7 @@ import {Wrap} from '../styled';
 import Mailchimp from "react-verlay-mailchimp-form";
 
 const MailingWrap = styled(Wrap)`
-  padding: 2rem 2rem 4rem;
+  padding: 4rem 2rem 4rem;
   position: relative;
   form {
     display: flex;
@@ -34,6 +34,7 @@ const MailingWrap = styled(Wrap)`
     width: 100%;
     padding: 0 1rem;
     font-size: 16px;
+    font-family: "Necto Mono";
   }
   button {
     height: 40px;
@@ -42,7 +43,7 @@ const MailingWrap = styled(Wrap)`
     padding: 0 1rem;
   }
   @media (min-width: 750px) {
-    padding: 2rem 0 4rem;
+    padding-top: 8rem;
     button {
       height: 60px;
       font-size: 16px;
@@ -55,7 +56,7 @@ const MailingWrap = styled(Wrap)`
 
 function MailingList(): JSX.Element {
   return (
-    <MailingWrap justifySelf="start" gridArea="mailing-list">
+    <MailingWrap justifySelf="start" gridArea="mailing-list" pl={[4, 4]} pr={[4, 4]}>
       <Mailchimp
         action=""
         fields={[
