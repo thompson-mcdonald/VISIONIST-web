@@ -38,19 +38,19 @@ function Home({events, homePage}): JSX.Element {
       </Wrap>
       <PageNavigation />
       <BuyLinks />
-        <Video id="view" title="view" borderTop="none" borderBottom="none" border="1px solid #888">
+        {/* <Video id="view" title="view" borderTop="none" borderBottom="none" border="1px solid #888">
           <iframe width="100%" height="282" src="https://www.youtube.com/embed/utTditmR1vo?playlist=utTditmR1vo&controls=0&loop=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        </Video>
+        </Video> */}
         <Facebook />
         {isMobile && <Instagram />}
+        <SlideShow className="slideshow" />
       <Wrap justifySelf="start" gridArea="ig-tw" display={["none", "block", "flex"]} width="100%">
-        <Instagram />
+        {!isMobile && <Instagram />}
         <Twitter />
       </Wrap>       
       <Spotify />
       <Wrap display={["block", "block", "flex"]} justifySelf="start" gridArea="bottom-right" width="100%">
         <EventWrapper events={events} />
-        <SlideShow />
       </Wrap>
       {isMobile && 
         <Wrap className="about">

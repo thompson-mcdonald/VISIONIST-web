@@ -29,7 +29,7 @@ const LinkOuter = styled.div`
 
 function BuyLinks():JSX.Element {
   return (
-    <Wrap  id="buy" justifySelf="start" display="flex" alignItems="center" gridArea="buy-links" border={["none", "1px solid #888"]} width="100%" flexDirection={["column", "column", "row"]}>
+    <Wrap  id="buy" justifySelf="start" display="flex" alignItems="center" gridArea="buy-links" border={["none", "none", "1px solid #888"]} width="100%" flexDirection={["column", "column", "row"]}>
       <LinkOuter borderRight={["none", "none", "1px solid #888"]}>
         <BuyLink href="#">Buy Merch</BuyLink>
       </LinkOuter>

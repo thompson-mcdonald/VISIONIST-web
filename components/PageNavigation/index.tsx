@@ -20,7 +20,7 @@ const NavButton = styled.a`
 
 function PageNavigation({}): JSX.Element {
   return (
-    <NavigationWrap display={["block", "none"]}>
+    <NavigationWrap display={["flex", "flex", "none"]}>
       <NavButton href="#buy" borderBottom="1px solid #888">Buy</NavButton>
       <NavButton href="#view" borderBottom="1px solid #888" borderLeft="1px solid #888">View</NavButton>
       <NavButton href="#listen">Listen</NavButton>

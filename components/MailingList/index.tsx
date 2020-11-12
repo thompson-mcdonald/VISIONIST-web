@@ -18,12 +18,14 @@ const MailingWrap = styled(Wrap)`
     align-items: end;
     width: 100%;
   }
+  label {
+    margin-bottom: 1rem;
+  }
   .msg-alert {
     display: inline;
     position: absolute;
     bottom: 0;
   }
-  label {
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -34,13 +36,17 @@ const MailingWrap = styled(Wrap)`
     width: 100%;
     padding: 0 1rem;
     font-size: 16px;
-    font-family: "Necto Mono";
+    font-family: "Nimbus Sans L", Helvetica, Arial, sans-serif;
   }
   button {
     height: 40px;
     margin-left: 10px;
     border: 1px solid #888;
     padding: 0 1rem;
+    &:hover {
+      background: #000;
+      color: white;
+    }
   }
   @media (min-width: 750px) {
     padding-top: 8rem;

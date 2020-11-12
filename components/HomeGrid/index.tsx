@@ -9,7 +9,7 @@ export const GridOuter = styled.div`
     height: 100vh;
     grid-template-areas:
       "facebook center  ig-tw"
-      "spotify center video-view"
+      "spotify center slideshow"
       "buy-links center bottom-right" ;
   }
 `;

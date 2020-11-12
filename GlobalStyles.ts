@@ -12,20 +12,28 @@ const GlobalStyles = createGlobalStyle`
     --max-lines-news: 6;
   }
 
+  @font-face {
+    font-family: 'Nimbus Sans L';
+    font-weight: normal;
+    src: local('Nimbus Sans L'),
+      url('/fonts/nimbussanl-reg.ttf') format('truetype'),
+      url('/fonts/nimbussanl-reg.woff2') format('woff2'),
+      url('/fonts/nimbussanl-reg.woff') format('woff');
+  }
+
   html, body {
     margin: 0 !important;
-    font-family: 'Necto Mono', Tahoma, Geneva, sans-serif;
+    font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
     letter-spacing: -0.2em
     font-size: 10px;
     background: #FAFAFA;
   }
 
-  html {
-    height: 100%;
+  html, body {
+    scroll-behavior: smooth;
   }
 
   #__next {
-    scroll-behaviour: smooth;
   }
 
   body {
@@ -38,6 +46,7 @@ const GlobalStyles = createGlobalStyle`
   a:link, a:visited {
     color: #111;
     text-decoration: none;
+    scroll-behavior: smooth;
   }
 
   * {

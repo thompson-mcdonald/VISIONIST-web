@@ -4,9 +4,9 @@ import SectionHeader from "../SectionHeader";
 import moment from "moment";
 
 const ItemWrap = styled.div`
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   display: flex; 
-  justify-content: space-between;
+  grid-gap: 2rem;
 `;
 
 interface EventProps {
@@ -34,7 +34,7 @@ export const EventItem: React.FC<EventProps> = ({name, date, ctaLocation, ctaTex
 export function EventWrapper({ events }): JSX.Element {
   console.log(events[1].date);
   return (
-    <Wrap justifySelf="start" gridArea="events"  border={["none", "none", "1px solid #888"]} borderTop="none" borderRight="none" width={["100%", "100%", "50%"]} mt={[4, 4, 0]} mb={[4, 4, 0]}>
+    <Wrap justifySelf="start" gridArea="events"  border={["none", "none", "1px solid #888"]} borderTop="none" borderRight="none" width={["100%", "100%", "100%"]} mt={[4, 4, 0]} mb={[4, 4, 0]}>
       <Wrap>
         <SectionHeader name="Live" />
       </Wrap>

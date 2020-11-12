@@ -21,6 +21,7 @@ import {
   flexbox,
   width,
   layout,
+  typography,
   grid
 } from "styled-system";
 
@@ -43,6 +44,7 @@ export const Wrap = styled.div`
   ${position}
   ${padding}
   ${margin}
+  ${typography}
 `;
 
 export const WrapFlex = styled.div`
