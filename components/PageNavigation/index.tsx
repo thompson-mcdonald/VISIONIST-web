@@ -18,15 +18,25 @@ const NavButton = styled.a`
   ${border}
 `;
 
-function PageNavigation({}): JSX.Element {
+function PageNavigation(): JSX.Element {
   return (
     <NavigationWrap display={["flex", "flex", "none"]}>
-      <NavButton href="#buy" borderBottom="1px solid #888">Buy</NavButton>
-      <NavButton href="#view" borderBottom="1px solid #888" borderLeft="1px solid #888">View</NavButton>
+      <NavButton href="#buy" borderBottom="1px solid #888">
+        Buy
+      </NavButton>
+      <NavButton
+        href="#view"
+        borderBottom="1px solid #888"
+        borderLeft="1px solid #888"
+      >
+        View
+      </NavButton>
       <NavButton href="#listen">Listen</NavButton>
-      <NavButton href="#about" borderLeft="1px solid #888">About</NavButton>
+      <NavButton href="#about" borderLeft="1px solid #888">
+        About
+      </NavButton>
     </NavigationWrap>
   );
-};
+}
 
-export default PageNavigation; 
+export default PageNavigation;

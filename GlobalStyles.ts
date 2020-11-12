@@ -26,11 +26,13 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Nimbus Sans L', Helvetica, Arial, sans-serif;
     letter-spacing: -0.2em
     font-size: 10px;
+    color: #1D1919;
     background: #FAFAFA;
   }
 
   html, body {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
   }
 
   #__next {

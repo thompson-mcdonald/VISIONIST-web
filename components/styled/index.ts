@@ -22,7 +22,7 @@ import {
   width,
   layout,
   typography,
-  grid
+  grid,
 } from "styled-system";
 
 export const Width = styled.div`
@@ -48,14 +48,14 @@ export const Wrap = styled.div`
 `;
 
 export const WrapFlex = styled.div`
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
 
-    ${border}
-    ${padding}
-    ${margin}
-    ${flexbox}`;
+  ${border}
+  ${padding}
+  ${margin}
+  ${flexbox}`;
 
 export const Flex = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Wrap} from '../styled';
+import { Wrap } from "../styled";
 import Mailchimp from "react-verlay-mailchimp-form";
 
 const MailingWrap = styled(Wrap)`
@@ -62,7 +62,14 @@ const MailingWrap = styled(Wrap)`
 
 function MailingList(): JSX.Element {
   return (
-    <MailingWrap justifySelf="start" gridArea="mailing-list" pl={[4, 4]} pr={[4, 4]}>
+    <MailingWrap
+      justifySelf="start"
+      gridArea="mailing-list"
+      pl={[4, 4]}
+      pr={[4, 4]}
+      ml={[4, 4, 4]}
+      mr={[4, 4, 4]}
+    >
       <Mailchimp
         action=""
         fields={[
@@ -86,9 +93,8 @@ function MailingList(): JSX.Element {
           button: "SUBMIT",
         }}
       />
-
     </MailingWrap>
-  )
-};
+  );
+}
 
 export default MailingList;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { position, layout, display, padding, border } from "styled-system";
+import { position, layout, border } from "styled-system";
 
 export const SectionHeaderWrap = styled.div`
   width: 100%;

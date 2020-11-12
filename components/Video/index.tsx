@@ -13,28 +13,48 @@ interface VideoProps {
   border?: string;
   borderTop?: string;
   borderBottom?: string;
-  pb?: any;
-  pt?: any;
-  pl?: any;
-  pr?: any;
+  pb?: string[];
+  pt?: string[];
+  pl?: string[];
+  pr?: string[];
   id?: string;
-  youtubeId?: string;
-  children: any;
+  children: React.ReactNode;
 }
 
-const Video: React.FC<VideoProps> = ({ title, border, borderTop, borderBottom, pb, pt, pr, pl, id, youtubeId, children }) => {
+const Video: React.FC<VideoProps> = ({
+  title,
+  border,
+  borderTop,
+  borderBottom,
+  pb,
+  pt,
+  pr,
+  pl,
+  id,
+  children,
+}) => {
   const isMobile = useMediaQuery("(max-width: 740px)");
-  const isDesktop = useMediaQuery("(min-width: 740px)");
+
   return (
-    <Wrap justifySelf="start" id={id} gridArea={"video-" + title} pt={pb} pb={pb} pr={pr} pl={pl} border={["none", border]} borderTop={["none", borderTop]} borderBottom={["none", borderBottom]} width="100%">
+    <Wrap
+      justifySelf="start"
+      id={id}
+      gridArea={"video-" + title}
+      pt={pt}
+      pb={pb}
+      pr={pr}
+      pl={pl}
+      border={["none", border]}
+      borderTop={["none", borderTop]}
+      borderBottom={["none", borderBottom]}
+      width="100%"
+    >
       <Wrap pl={2} pr={2}>
         {isMobile && <h2>{title && title}</h2>}
       </Wrap>
-      <VideoWrapper>
-        {children}
-      </VideoWrapper> 
+      <VideoWrapper>{children}</VideoWrapper>
     </Wrap>
-  )
+  );
 };
 
 export default Video;

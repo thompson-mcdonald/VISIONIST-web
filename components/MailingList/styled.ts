@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { padding } from "styled-system";
 
 export const MailingListWrapper = styled.div`

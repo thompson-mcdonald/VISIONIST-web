@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HeaderWrap = styled.header`
   text-align: center;
@@ -15,10 +15,17 @@ const HeaderWrap = styled.header`
 `;
 
 const Header = (): JSX.Element => {
-  return <HeaderWrap>
-    <img src="/logo.png" />
-    <img src="/flag.png" style={{mixBlendMode: "multiply"}} />
-    </HeaderWrap>;
+  return (
+    <HeaderWrap>
+      <img src="/logo.png" />
+      <img
+        src="/flag.png"
+        style={{
+          mixBlendMode: "multiply",
+        }}
+      />
+    </HeaderWrap>
+  );
 };
 
 export default Header;

@@ -1,6 +1,6 @@
 import { Wrap } from "../styled";
 import styled from "styled-components";
-import {border} from "styled-system";
+import { border } from "styled-system";
 
 const BuyLink = styled.a`
   text-align: center;
@@ -9,7 +9,8 @@ const BuyLink = styled.a`
   display: block;
   width: 100%;
   padding: 3rem 0;
-  &:link, &:visited {
+  &:link,
+  &:visited {
     text-decoration: none;
     color: #111;
   }
@@ -27,9 +28,18 @@ const LinkOuter = styled.div`
   ${border}
 `;
 
-function BuyLinks():JSX.Element {
+function BuyLinks(): JSX.Element {
   return (
-    <Wrap  id="buy" justifySelf="start" display="flex" alignItems="center" gridArea="buy-links" border={["none", "none", "1px solid #888"]} width="100%" flexDirection={["column", "column", "row"]}>
+    <Wrap
+      id="buy"
+      justifySelf="start"
+      display="flex"
+      alignItems="center"
+      gridArea="buy-links"
+      border={["none", "none", "1px solid #888"]}
+      width="100%"
+      flexDirection={["column", "column", "row"]}
+    >
       <LinkOuter borderRight={["none", "none", "1px solid #888"]}>
         <BuyLink href="#">Buy Merch</BuyLink>
       </LinkOuter>

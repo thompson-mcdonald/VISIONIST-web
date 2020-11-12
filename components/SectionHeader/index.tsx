@@ -1,23 +1,38 @@
-import { SectionHeaderWrap } from './styled';
+import { SectionHeaderWrap } from "./styled";
 
 interface SectionProps {
   name?: string;
   url?: string;
   username?: string;
-  position?: any;
+  position?: string[];
   zIndex?: string;
-  borderRight?:string[];
+  borderRight?: string[];
   borderLeft?: string[];
-  style?: any;
+  style?: string[];
 }
 
-const SectionHeader: React.FC<SectionProps> = ({name, url, username, position, zIndex, borderRight, borderLeft, style}) => {
+const SectionHeader: React.FC<SectionProps> = ({
+  name,
+  url,
+  username,
+  position,
+  zIndex,
+  borderRight,
+  borderLeft,
+  style,
+}) => {
   return (
-    <SectionHeaderWrap position={position} zIndex={zIndex} borderRight={borderRight} borderLeft={borderLeft} style={style}>
+    <SectionHeaderWrap
+      position={position}
+      zIndex={zIndex}
+      borderRight={borderRight}
+      borderLeft={borderLeft}
+      style={style}
+    >
       {name && <h2>{name}</h2>}
       {url && username && <a href={url}>{username}</a>}
     </SectionHeaderWrap>
-  )
-}
+  );
+};
 
 export default SectionHeader;

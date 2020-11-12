@@ -1,6 +1,10 @@
 import { Title } from "./styled";
 
-const Hero = ({ title, subtitle }): JSX.Element => {
+interface HeroProps {
+  title?: string;
+  subtitle?: string;
+}
+const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
   return (
     <>
       <Title>{title}</Title>
