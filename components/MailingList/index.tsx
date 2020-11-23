@@ -51,6 +51,10 @@ const MailingWrap = styled(Wrap)`
     }
   }
   @media (min-width: 950px) {
+    padding: 2rem 3rem 1rem;
+    form {
+      flex-direction: row;
+    }
     button {
       height: 60px;
       font-size: 16px;
@@ -64,12 +68,7 @@ const MailingWrap = styled(Wrap)`
 
 function MailingList(): JSX.Element {
   return (
-    <MailingWrap
-      justifySelf="start"
-      gridArea="mailing-list"
-      ml={[1, 0, 3]}
-      mr={[1, 0, 3]}
-    >
+    <MailingWrap justifySelf="start" gridArea="mailing-list">
       <Mailchimp
         action="https://live.us2.list-manage.com/subscribe/post?u=eebcb13564b87eb7d00ee90ce&amp;id=e583e2b111"
         fields={[

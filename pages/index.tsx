@@ -31,7 +31,7 @@ function Home({ events, homePage }): JSX.Element {
         pt={[0, 0, 4]}
         style={{ textAlign: "center" }}
         position={["static", "static"]}
-        justifyContent={["unset", "unset", "space-evenly"]}
+        justifyContent={["unset", "unset", "unset"]}
         display={["block", "block", "flex"]}
         flexDirection={["column"]}
       >

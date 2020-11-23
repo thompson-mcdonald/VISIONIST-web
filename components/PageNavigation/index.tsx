@@ -12,6 +12,7 @@ const NavigationWrap = styled(Wrap)`
   border: 1px solid #888;
   @media (min-width: 950px) {
     border: none;
+    padding: 1rem 3rem 1rem;
     margin: 0;
   }
 `;

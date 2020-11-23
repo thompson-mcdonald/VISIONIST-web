@@ -48,6 +48,9 @@ const AboutWrap = styled(Wrap)`
     transition: 0.5s height, 0.5s bottom, opacity 1s;
     opacity: 1;
   }
+  @media (min-width: 950px) {
+    left: auto;
+  }
 `;
 
 const StyledA = styled.a`
