@@ -3,11 +3,11 @@ import { Wrap } from "../styled";
 import Mailchimp from "react-verlay-mailchimp-form";
 
 const MailingWrap = styled(Wrap)`
-  padding: 4rem 2rem 4rem;
+  padding: 2rem 1rem 4rem;
   position: relative;
   form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
   }
@@ -27,14 +27,13 @@ const MailingWrap = styled(Wrap)`
     bottom: 0;
   }
     padding-bottom: 1rem;
-    text-transform: uppercase;
     font-size: 1.2rem;
   }
   input {
     height: 40px;
     border: 1px solid #888;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0.4rem 1rem;
     font-size: 16px;
     font-family: "Nimbus Sans L", Helvetica, Arial, sans-serif;
   }
@@ -43,16 +42,19 @@ const MailingWrap = styled(Wrap)`
     margin-left: 10px;
     border: 1px solid #888;
     padding: 0 1rem;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
     &:hover {
       background: #000;
       color: white;
     }
   }
-  @media (min-width: 750px) {
-    padding-top: 8rem;
+  @media (min-width: 950px) {
     button {
       height: 60px;
       font-size: 16px;
+      width: auto;
     }
     input {
       height: 60px;
@@ -65,20 +67,18 @@ function MailingList(): JSX.Element {
     <MailingWrap
       justifySelf="start"
       gridArea="mailing-list"
-      pl={[4, 4]}
-      pr={[4, 4]}
-      ml={[4, 4, 4]}
-      mr={[4, 4, 4]}
+      ml={[1, 0, 3]}
+      mr={[1, 0, 3]}
     >
       <Mailchimp
-        action=""
+        action="https://live.us2.list-manage.com/subscribe/post?u=eebcb13564b87eb7d00ee90ce&amp;id=e583e2b111"
         fields={[
           {
             name: "EMAIL",
             placeholder: "example@gmail.com",
             type: "email",
             required: true,
-            label: "Email Address",
+            label: "Sign up for Visionist updates below",
             for: "email",
             id: "email",
             forAttr: "email",

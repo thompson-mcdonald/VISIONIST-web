@@ -13,10 +13,10 @@ interface VideoProps {
   border?: string;
   borderTop?: string;
   borderBottom?: string;
-  pb?: string[];
-  pt?: string[];
-  pl?: string[];
-  pr?: string[];
+  pb?: any;
+  pt?: any;
+  pl?: any;
+  pr?: any;
   id?: string;
   children: React.ReactNode;
 }
@@ -49,9 +49,7 @@ const Video: React.FC<VideoProps> = ({
       borderBottom={["none", borderBottom]}
       width="100%"
     >
-      <Wrap pl={2} pr={2}>
-        {isMobile && <h2>{title && title}</h2>}
-      </Wrap>
+      <Wrap>{isMobile && <h2>{title && title}</h2>}</Wrap>
       <VideoWrapper>{children}</VideoWrapper>
     </Wrap>
   );

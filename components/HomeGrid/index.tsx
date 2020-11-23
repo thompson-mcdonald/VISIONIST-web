@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const GridOuter = styled.div`
-  @media (min-width: 750px) {
+  @media (min-width: 950px) {
     display: grid;
-    grid-template-columns: 30% 35% 35%;
-    grid-template-rows: 40% 30% 30%; 
+    grid-template-columns: 360px calc(60% - 360px) 40%;
+    grid-template-rows: 42.5% 32.5% 25%;
     width: 100vw;
     height: 100vh;
     grid-template-areas:
       "facebook center  ig-tw"
       "spotify center slideshow"
-      "buy-links center bottom-right" ;
+      "buy-links center bottom-right";
   }
 `;

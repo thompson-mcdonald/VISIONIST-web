@@ -12,9 +12,13 @@ function Spotify(): JSX.Element {
       justifySelf="start"
       gridArea="spotify"
       border={["none", "none", "1px solid #888"]}
+      borderTop={["none", "none", "none"]}
+      borderBottom={["none", "none", "none"]}
       width="100%"
-      borderTop="0"
-      borderBottom="0"
+      pt={[4, 0, 0]}
+      mt={[4, 0, 0]}
+      pb={[4, 0, 0]}
+      mb={[4, 0, 0]}
     >
       {isMobile && (
         <SectionHeader

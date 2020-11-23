@@ -36,13 +36,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #__next {
+    box-sizing: border-box;
   }
 
   body {
     height: 100%;
     margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    @media (min-width: 950px) {
+
+    }
   }
 
   a:link, a:visited {

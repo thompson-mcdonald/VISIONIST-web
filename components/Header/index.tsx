@@ -12,6 +12,9 @@ const HeaderWrap = styled.header`
     margin-bottom: 2rem;
     max-width: 250px;
   }
+  @media (min-width: 950px) {
+    padding-top: 0;
+  }
 `;
 
 const Header = (): JSX.Element => {
@@ -19,7 +22,7 @@ const Header = (): JSX.Element => {
     <HeaderWrap>
       <img src="/logo.png" />
       <img
-        src="/flag.png"
+        src="/bw-logo.png"
         style={{
           mixBlendMode: "multiply",
         }}

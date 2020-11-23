@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import theme from "../theme";
 import GlobalStyles from "../GlobalStyles";
+import "../node_modules/pure-react-carousel/dist/react-carousel.es.css";
 
 export default class MyApp extends App {
   render(): JSX.Element {
