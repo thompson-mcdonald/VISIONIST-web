@@ -3,9 +3,15 @@ import { Wrap } from "../styled";
 import useMediaQuery from "use-media-query-hook";
 
 const VideoWrapper = styled.div`
-  background: #eee;
   width: 100%;
   box-sizing: border-box;
+  padding: 1rem 1rem;
+  @media (min-width: 750px) {
+    padding: 1rem 3rem;
+  }
+  @media (min-width: 1300px) {
+    padding: 1rem 5rem;
+  }
 `;
 
 interface VideoProps {

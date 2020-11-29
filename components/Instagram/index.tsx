@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 
 const InstagramWrapper = styled(Wrap)`
   width: 100%;
+  flex-direction: column;
   @media (min-width: 950px) {
     max-height: none;
     width: 50%;
@@ -52,13 +53,14 @@ function Instagram(): JSX.Element {
       borderTop={["none", "none", "1px solid #888"]}
       position={["static", "static", "relative"]}
       overflowY="scroll"
+      flexDirection="row"
       pt={[3, 3, 0]}
       mt={[3, 2, "-1px"]}
       pb={[3, 2, 0]}
       mb={[3, 2, 0]}
     >
       <SectionHeader
-        url="https://twitter.com/__VISIONIST"
+        url="https://www.instagram.com/VISIONIST__/"
         username="@VISIONIST____"
         name="Instagram"
         position={["static", "static", "fixed"]}

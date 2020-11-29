@@ -39,7 +39,9 @@ const LinkOuter = styled.div`
   // align-items: center;
   // flex-direction: row;
   width: 100%;
+  margin-bottom: 1.4rem;
   @media (min-width: 950px) {
+    margin-bottom: 0;
     width: 50%;
     flex-direction: column;
   }
@@ -83,10 +85,22 @@ function BuyLinks(): JSX.Element {
         pl={[2, 2, 0]}
         pr={[2, 2, 0]}
       >
-        <BuyLink href="#">Buy Merch</BuyLink>
+        <BuyLink
+          href="https://visionist.bandcamp.com/merch"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Buy Merch
+        </BuyLink>
       </LinkOuter>
       <LinkOuter pl={[2, 2, 0]} pr={[2, 2, 0]}>
-        <BuyLink href="#">Buy Music</BuyLink>
+        <BuyLink
+          href="https://visionist.bandcamp.com/music"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Buy Music
+        </BuyLink>
       </LinkOuter>
     </Wrap>
   );

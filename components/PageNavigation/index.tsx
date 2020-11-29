@@ -10,14 +10,34 @@ const NavigationWrap = styled(Wrap)`
   text-align: center;
   margin: 4rem 0;
   border: 1px solid #888;
+  @media (min-width: 750px) {
+    padding: 1rem 2rem 1rem;
+  }
   @media (min-width: 950px) {
     border: none;
     padding: 1rem 3rem 1rem;
     margin: 0;
   }
+  @media (min-width: 1300px) {
+    border: none;
+    padding: 1rem 5rem 1rem;
+    margin: 0;
+  }
 `;
 
 const NavButton = styled.a`
+  padding: 2rem;
+  width: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  ${border}
+  @media (min-width: 950px) {
+    width: auto;
+    padding: 0;
+  }
+`;
+
+const DivButton = styled.div`
   padding: 2rem;
   width: 50%;
   font-size: 2rem;
@@ -52,12 +72,12 @@ function PageNavigation(): JSX.Element {
           <NavButton href="#listen">Listen</NavButton>
         </>
       )}
-      <NavButton
+      <DivButton
         href="#about"
         borderLeft={["1px solid #888", "1px solid #888", "none"]}
       >
         <About />
-      </NavButton>
+      </DivButton>
     </NavigationWrap>
   );
 }

@@ -23,12 +23,17 @@ const SliderWrap = styled(Slider)`
   overflow: hidden;
   ul li {
     list-style-type: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
   }
 `;
 
 const Image = styled.img`
   width: 100%;
+  @media (min-width: 950px) {
+    margin-top: 0;
+    transform: scale(0.6);
+  }
 `;
 
 const SlideShow: React.FC<SliderProps> = ({ className }) => {
@@ -46,34 +51,23 @@ const SlideShow: React.FC<SliderProps> = ({ className }) => {
       overflow="hidden"
       gridArea="slideshow"
       css={`
-        background: #000;
+        background: #fafafa;
       `}
     >
       <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={isMobile ? 130 : 90}
-        totalSlides={3}
+        naturalSlideHeight={isMobile ? 80 : 90}
+        totalSlides={2}
         interval={4000}
         isPlaying
         infinite
       >
-        <Div position="relative" width="100%" zIndex="5">
-          <Div position="absolute" left="0">
-            <ButtonBack>Back</ButtonBack>
-          </Div>
-          <Div position="absolute" right="0">
-            <ButtonNext>Next</ButtonNext>
-          </Div>
-        </Div>
         <SliderWrap>
           <Slide index={0}>
-            <Image src="/texture1.JPG" />
+            <Image src="/mask3.png" />
           </Slide>
           <Slide index={1}>
-            <Image src="/texture2.JPG" />
-          </Slide>
-          <Slide index={2}>
-            <Image src="/texture3.JPG" />
+            <Image src="/mask4.jpg" />
           </Slide>
         </SliderWrap>
       </CarouselProvider>

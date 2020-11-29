@@ -13,6 +13,7 @@ interface SectionProps {
   marginTop?: string[];
   marginLeft?: string[];
   mb?: string[];
+  top?: string[];
 }
 
 const SectionHeader: React.FC<SectionProps> = ({
@@ -26,6 +27,7 @@ const SectionHeader: React.FC<SectionProps> = ({
   style,
   marginTop,
   marginLeft,
+  top,
 }) => {
   return (
     <SectionHeaderWrap
@@ -36,6 +38,7 @@ const SectionHeader: React.FC<SectionProps> = ({
       style={style}
       marginTop={marginTop}
       marginLeft={marginLeft}
+      top={top}
     >
       {name && <h2>{name}</h2>}
       {url && username && <a href={url}>{username}</a>}

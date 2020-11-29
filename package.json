@@ -15,7 +15,9 @@
     "next": "9.4.4",
     "pure-react-carousel": "^1.27.1",
     "react": "16.13.1",
+    "react-cookie-consent": "^6.1.0",
     "react-dom": "16.13.1",
+    "react-ga": "^3.3.0",
     "react-verlay-mailchimp-form": "^1.0.12",
     "use-media-query-hook": "^0.3.0"
   },

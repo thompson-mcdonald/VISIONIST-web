@@ -17,6 +17,12 @@ const ItemWrap = styled.div`
   }
 `;
 
+const EventsWrap = styled(Wrap)`
+  h2 {
+    text-transform: uppercase;
+  }
+`;
+
 interface EventProps {
   name: string;
   ctaLocation: string;
@@ -48,9 +54,13 @@ export const EventItem: React.FC<EventProps> = ({
 };
 
 export function EventWrapper({ events }): JSX.Element {
-  console.log(events[1].date);
+  if (!events) {
+    return <></>;
+  }
+
+  console.log(events);
   return (
-    <Wrap
+    <EventsWrap
       justifySelf="start"
       gridArea="events"
       border={["none", "none", "1px solid #888"]}
@@ -75,7 +85,8 @@ export function EventWrapper({ events }): JSX.Element {
               ctaText={n.ctaText}
             />
           ))}
+        {events.length < 1 && <h2>No events yet</h2>}
       </Wrap>
-    </Wrap>
+    </EventsWrap>
   );
 }

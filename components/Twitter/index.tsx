@@ -3,18 +3,26 @@ import styled from "styled-components";
 import SectionHeader from "../SectionHeader";
 
 const TwitterWrap = styled(Wrap)`
+  overflow-y: scroll;
   @media (max-width: 650px) {
-    max-height: 300px;
-    overflow-y: scroll;
+    max-height: 500px;
+    overflow-y: hidden;
   }
 `;
 
 const PostsWrap = styled.div`
-  margin-top: -62px;
+  // margin-top: -55px;
+  max-height: 500px;
+  overflow-y: scroll;
+  padding: 0 1rem;
   @media (min-width: 950px) {
     margin-top: 26px;
+    max-height: none;
+    padding: 0;
   }
 `;
+
+const TwitterSectionHeader = styled(SectionHeader)``;
 
 function Twitter(): JSX.Element {
   return (
@@ -30,21 +38,21 @@ function Twitter(): JSX.Element {
       border={["none", "none", "1px solid #888"]}
       borderTop={["none", "none", "1px solid #888"]}
       borderLeft={["none", "none"]}
-      overflowY="scroll"
     >
-      <SectionHeader
-        url="https://twitter.com/__VISIONIST"
-        username="@VISIONIST____"
+      <TwitterSectionHeader
+        url="https://twitter.com/VISIONIST__"
+        username="@VISIONIST__"
         name="Twitter"
-        position={["static", "static", "fixed"]}
+        position={["relative", "relative", "relative", "fixed"]}
         zIndex="4"
         borderLeft={["none", "none", "1px solid #888"]}
         borderTop={["none", "none", "1px solid #888"]}
         marginLeft={["0", "0", "-1px"]}
-        marginTop={["0", "0", "-1px"]}
+        marginTop={["0", "0", "0"]}
+        top={["-10px", "0", "0"]}
       >
         Twitter
-      </SectionHeader>
+      </TwitterSectionHeader>
       <PostsWrap>
         <a
           className="twitter-timeline"

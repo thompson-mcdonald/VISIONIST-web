@@ -71,11 +71,28 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
   }
 
-  /* Do we need this?? */
-  input, button {
-    &:focus {
-      outline: none;
-    }
+  .carousel__slider, .carousel {
+    height: 100%;
+  }
+
+  .carousel__inner-slide {
+    display: flex;
+    height: 100%;
+    position: static;
+  }
+
+  .carousel__inner-slide {
+    height: auto;
+    object-fit: scale-down;
+  }
+
+  .carousel__slider-tray-wrap--horizontal, .carousel__slider-tray-wrap--horizontal ul {
+    height: 100%;
+  }
+
+  .carousel__slide {
+    height: 100%;
+    padding-bottom: 0!important;
   }
 
   button, input[type="submit"], input[type="reset"] {

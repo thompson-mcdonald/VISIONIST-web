@@ -11,14 +11,9 @@ const FacebookWrap = styled(Wrap)`
   }
 `;
 
-const TexturedWrap = styled(Wrap)`
-  background-image: url("/texture1.JPG");
-  background-size: 100%;
-`;
-
 function Facebook(): JSX.Element {
   return (
-    <TexturedWrap
+    <Wrap
       width={["100%", "100%"]}
       justifySelf="start"
       gridArea="facebook"
@@ -50,7 +45,7 @@ function Facebook(): JSX.Element {
           allow="encrypted-media"
         ></iframe>
       </FacebookWrap>
-    </TexturedWrap>
+    </Wrap>
   );
 }
 

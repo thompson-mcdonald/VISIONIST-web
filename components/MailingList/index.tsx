@@ -20,6 +20,7 @@ const MailingWrap = styled(Wrap)`
   }
   label {
     margin-bottom: 1rem;
+    text-transform: uppercase;
   }
   .msg-alert {
     display: inline;
@@ -37,6 +38,14 @@ const MailingWrap = styled(Wrap)`
     font-size: 16px;
     font-family: "Nimbus Sans L", Helvetica, Arial, sans-serif;
   }
+  input:focus {
+    outline: none;
+  }
+  .msg-alert {
+    bottom: -20px;
+    display: block;
+    text-align: left;
+  }
   button {
     height: 40px;
     margin-left: 10px;
@@ -50,8 +59,12 @@ const MailingWrap = styled(Wrap)`
       color: white;
     }
   }
+  @media (min-width: 750px) {
+    padding: 2rem 2rem 1rem;
+  }
   @media (min-width: 950px) {
-    padding: 2rem 3rem 1rem;
+    padding: 3rem 3rem 1rem;
+    margin: 2rem 0;
     form {
       flex-direction: row;
     }
@@ -63,6 +76,9 @@ const MailingWrap = styled(Wrap)`
     input {
       height: 60px;
     }
+  }
+  @media (min-width: 1300px) {
+    padding: 1rem 5rem;
   }
 `;
 
@@ -77,7 +93,7 @@ function MailingList(): JSX.Element {
             placeholder: "example@gmail.com",
             type: "email",
             required: true,
-            label: "Sign up for Visionist updates below",
+            label: "Sign up for Visionist updates",
             for: "email",
             id: "email",
             forAttr: "email",

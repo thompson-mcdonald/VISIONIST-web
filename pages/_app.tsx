@@ -1,7 +1,6 @@
 import App from "next/app";
 import React from "react";
 import { ThemeProvider } from "styled-components";
-
 import theme from "../theme";
 import GlobalStyles from "../GlobalStyles";
 import "../node_modules/pure-react-carousel/dist/react-carousel.es.css";

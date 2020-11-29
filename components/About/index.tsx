@@ -15,6 +15,9 @@ const AboutContainerWrap = styled(Wrap)`
     justify-content: center;
     z-index: 6;
   }
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: 950px) {
     &.active {
       position: absolute;
@@ -28,10 +31,13 @@ const AboutWrap = styled(Wrap)`
   opacity: 0;
   margin-top: 2rem;
   background: white;
-  color: red;
+  color: #ff1c1f;
   padding: 2rem 5rem;
   text-align: left;
   left: 0;
+  &:hover {
+    cursor: initial;
+  }
   p {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -41,6 +47,12 @@ const AboutWrap = styled(Wrap)`
   }
   h2 {
     font-size: 2.4rem;
+    margin: 0.2rem 0 1rem;
+  }
+  a:link,
+  a:visited {
+    color: #ff1c1f;
+    text-decoration: underline;
   }
   &.active {
     height: auto;
@@ -58,21 +70,35 @@ const StyledA = styled.a`
   font-size: 2rem;
   text-transform: uppercase;
   padding-bottom: 1rem;
+  &:link,
+  &:visited {
+    text-decoration: none !important;
+  }
   &.active {
     transition: opacity 0.5s, transform 0.5s;
   }
   @media (min-width: 950px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    background: #000;
+    padding: 1rem;
+    &:link,
+    &:visited {
+      color: #fff;
+    }
   }
 `;
 
-const CloseButton = styled(StyledA)`
+const CloseButton = styled.a`
   // position: fixed;
   z-index: 7;
   // top: auto;
   // position: fixed;
   visibility: hidden;
   transition: opacity 0.25s;
+  &:link,
+  &:visited {
+    text-decoration: none !important;
+  }
   &.active {
     display: block;
     visibility: visible;
@@ -101,14 +127,7 @@ function About(): JSX.Element {
   };
 
   return (
-    <Wrap
-      id="about"
-      justifySelf="start"
-      gridArea="about"
-      // pl={[2, 2, 3]}
-      // pr={[2, 2, 3]}
-      // pb={[0, 3, 0]}
-    >
+    <Wrap id="about" justifySelf="start" gridArea="about">
       <Wrap position="relative">
         <StyledA href="" onClick={handleClick}>
           About
@@ -116,12 +135,21 @@ function About(): JSX.Element {
       </Wrap>
       <AboutContainerWrap className={opened ? "active" : ""}>
         <AboutWrap className={opened ? "active" : ""}>
-          <h2>About</h2>
-          <p>Ullamcorper Commodo Parturient</p>
-          <h2>Agent</h2>
-          <p>Ullamcorper Commodo Parturient</p>
-          <h2>Linktree</h2>
-          <p>Ullamcorper Commodo Parturient</p>
+          <h2>
+            Manager:{" "}
+            <a href="mailto:simon@day-one.net" rel="noreferrer" target="_blank">
+              simon@day-one.net
+            </a>
+          </h2>
+          <h2>
+            <a
+              href="https://linktr.ee/visionist"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Linktree
+            </a>
+          </h2>
           <CloseButton
             href=""
             className={opened ? "active" : ""}
