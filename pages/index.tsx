@@ -33,6 +33,7 @@ function Home({ events }): JSX.Element {
   return (
     <>
       <Head>
+        <title>Visionist</title>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JMX2YYT928"

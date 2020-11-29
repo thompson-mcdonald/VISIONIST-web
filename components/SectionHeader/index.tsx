@@ -41,7 +41,11 @@ const SectionHeader: React.FC<SectionProps> = ({
       top={top}
     >
       {name && <h2>{name}</h2>}
-      {url && username && <a href={url}>{username}</a>}
+      {url && username && (
+        <a href={url} target="_blank" rel="noreferrer">
+          {username}
+        </a>
+      )}
     </SectionHeaderWrap>
   );
 };
