@@ -57,17 +57,29 @@ const SlideShow: React.FC<SliderProps> = ({ className }) => {
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={isMobile ? 80 : 90}
-        totalSlides={2}
+        totalSlides={6}
         interval={4000}
         isPlaying
         infinite
       >
         <SliderWrap>
           <Slide index={0}>
-            <Image src="/mask3.png" />
+            <Image src="/slogan.png" />
           </Slide>
           <Slide index={1}>
-            <Image src="/mask4.jpg" />
+            <Image src="/ceiling1.jpg" />
+          </Slide>
+          <Slide index={2}>
+            <Image src="/ceiling2.jpg" />
+          </Slide>
+          <Slide index={3}>
+            <Image src="/laptop.jpg" />
+          </Slide>
+          <Slide index={4}>
+            <Image src="/phone.jpg" />
+          </Slide>
+          <Slide index={5}>
+            <Image src="/tv.jpg" />
           </Slide>
         </SliderWrap>
       </CarouselProvider>
