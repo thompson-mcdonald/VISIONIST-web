@@ -37,12 +37,12 @@ function Home({ events }): JSX.Element {
         <meta property="og:url" content="https://visionist.live" />
         <meta property="og:title" content="VISIONIST" />
         <meta property="og:description" content="VISIONIST.LIVE" />
-        <meta property="og:image" content="/fb.jpg" />
+        <meta property="og:image" content="/images/fb.jpg" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="VISIONIST.LIVE" />
         <meta name="twitter:description" content="VISIONIST" />
-        <meta name="twitter:image" content="/twitter.jpg" />
+        <meta name="twitter:image" content="/images/twitter.jpg" />
 
         <script
           async
