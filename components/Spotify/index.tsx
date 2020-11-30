@@ -30,7 +30,7 @@ function Spotify(): JSX.Element {
       <Wrap pl={[2, 2, 0]} pr={[2, 2, 0]} height="100%">
         {isMobile && (
           <iframe
-            src="https://open.spotify.com/embed/playlist/4n94p4sMQhQVO8xsw1QuOH"
+            src="https://open.spotify.com/embed/playlist/2jEQISPpvuDtWndt8SxHJu"
             width="100%"
             height="300px"
             frameBorder="0"
@@ -39,7 +39,7 @@ function Spotify(): JSX.Element {
         )}
         {isDesktop && (
           <iframe
-            src="https://open.spotify.com/embed/playlist/4n94p4sMQhQVO8xsw1QuOH"
+            src="https://open.spotify.com/embed/playlist/2jEQISPpvuDtWndt8SxHJu"
             width="100%"
             height="100%"
             frameBorder="0"
