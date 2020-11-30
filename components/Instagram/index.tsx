@@ -6,6 +6,11 @@ import React, { useState, useEffect } from "react";
 const InstagramWrapper = styled(Wrap)`
   width: 100%;
   flex-direction: column;
+  max-height: 423px;
+  @media (min-width: 780px) {
+    width: 50%;
+    max-height: 420px;
+  }
   @media (min-width: 950px) {
     max-height: none;
     width: 50%;
@@ -24,7 +29,7 @@ const PostsWrapper = styled.div`
 `;
 
 const Post = styled.img`
-  @media (max-width: 650px) {
+  @media (max-width: 950px) {
     min-width: 300px;
   }
   width: 100%;
@@ -63,7 +68,7 @@ function Instagram(): JSX.Element {
         url="https://www.instagram.com/VISIONIST__/"
         username="@VISIONIST____"
         name="Instagram"
-        position={["static", "static", "fixed"]}
+        position={["static", "static", "static", "fixed"]}
         zIndex="4"
       />
       <PostsWrapper>

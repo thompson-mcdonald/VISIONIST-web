@@ -3,8 +3,8 @@ import SectionHeader from "../SectionHeader";
 import useMediaQuery from "use-media-query-hook";
 
 function Spotify(): JSX.Element {
-  const isMobile = useMediaQuery("(max-width: 740px)");
-  const isDesktop = useMediaQuery("(min-width: 740px)");
+  const isMobile = useMediaQuery("(max-width: 940px)");
+  const isDesktop = useMediaQuery("(min-width: 940px)");
 
   return (
     <Wrap

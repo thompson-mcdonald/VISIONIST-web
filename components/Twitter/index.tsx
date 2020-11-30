@@ -11,10 +11,14 @@ const TwitterWrap = styled(Wrap)`
 `;
 
 const PostsWrap = styled.div`
-  // margin-top: -55px;
+  margin-top: -60px;
   max-height: 500px;
   overflow-y: scroll;
   padding: 0 1rem;
+  @media (min-width: 780px) {
+    max-height: 320px;
+    margin-top: 26px;
+  }
   @media (min-width: 950px) {
     margin-top: 26px;
     max-height: none;
