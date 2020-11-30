@@ -86,7 +86,7 @@ function Home({ events }): JSX.Element {
               allowFullScreen
             ></iframe>
           </Video>
-          <MailingList />
+          {isMobile && <MailingList />}
           <PageNavigation />
         </Wrap>
         <BuyLinks />
@@ -102,14 +102,21 @@ function Home({ events }): JSX.Element {
         </Wrap>
         <Facebook />
         <SlideShow className="slideshow" />
-        <Wrap
-          display={["block", "block", "flex"]}
-          justifySelf="start"
-          gridArea="bottom-right"
-          width="100%"
-        >
-          <EventWrapper events={events} />
-        </Wrap>
+        {isDesktop && (
+          <Wrap
+            display={["block", "block", "flex"]}
+            justifySelf="start"
+            gridArea="bottom-right"
+            width="100%"
+            borderLeft={["none", "none", "1px solid #888"]}
+            borderTop={["none", "none", "1px solid #888"]}
+            padding={[]}
+            alignItems="center"
+          >
+            <MailingList />
+            {/* <EventWrapper events={events} /> */}
+          </Wrap>
+        )}
         {/* <CookieConsent
           buttonStyle={{ color: "#4e503b", fontSize: "15px" }}
           declineButtonStyle={{ fontSize: "14px" }}

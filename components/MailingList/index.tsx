@@ -64,6 +64,7 @@ const MailingWrap = styled(Wrap)`
     padding: 2rem 2rem 1rem;
   }
   @media (min-width: 950px) {
+    width: 100%;
     padding: 3rem 3rem 1rem;
     margin: 2rem 0;
     form {
@@ -79,7 +80,7 @@ const MailingWrap = styled(Wrap)`
     }
   }
   @media (min-width: 1300px) {
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
   }
 `;
 
