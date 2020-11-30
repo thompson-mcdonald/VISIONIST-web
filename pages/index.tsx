@@ -28,15 +28,25 @@ declare global {
 function Home({ events }): JSX.Element {
   const isMobile = useMediaQuery("(max-width: 950px)");
   const isDesktop = useMediaQuery("(min-width: 950px");
-  const [consent, setConsent] = useState(false);
 
   return (
     <>
       <Head>
         <title>Visionist</title>
+        <meta name="description" content="VISIONIST" />
+        <meta property="og:url" content="https://visionist.live" />
+        <meta property="og:title" content="VISIONIST" />
+        <meta property="og:description" content="VISIONIST.LIVE" />
+        <meta property="og:image" content="/facebook.jpg" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="VISIONIST.LIVE" />
+        <meta name="twitter:description" content="VISIONIST" />
+        <meta name="twitter:image" content="/twitter.jpg" />
+
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-JMX2YYT928"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WS6CRF59WT"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -45,7 +55,7 @@ function Home({ events }): JSX.Element {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-JMX2YYT928', {
+          gtag('config', 'G-WS6CRF59WT', {
             page_path: window.location.pathname,
           });`,
           }}

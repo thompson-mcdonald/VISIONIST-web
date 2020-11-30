@@ -58,7 +58,6 @@ export function EventWrapper({ events }): JSX.Element {
     return <></>;
   }
 
-  console.log(events);
   return (
     <EventsWrap
       justifySelf="start"
