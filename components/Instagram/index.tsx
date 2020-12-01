@@ -74,7 +74,7 @@ function Instagram(): JSX.Element {
       <PostsWrapper>
         {IGPosts &&
           IGPosts.map((i) => (
-            <a href={i.url} key={i.id}>
+            <a href={i.url} target="_blank" rel="noreferrer" key={i.id}>
               <Post
                 src={`https://images.weserv.nl/?url=${encodeURIComponent(
                   i.thumbnail
