@@ -28,7 +28,7 @@ const HeaderWrap = styled.header`
 
 const Header = (): JSX.Element => {
   return (
-    <HeaderWrap>
+    <HeaderWrap className="fade-in-quick">
       <a href="/">
         <img src="/logo.png" />
       </a>

@@ -70,6 +70,27 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
+  
+  .fade-in-quick {
+    transition: 2s ease 0s fromTop;
+  }
+
+  @keyframes fromTop {
+    0% {
+      opacity:0;
+      transform: translateY(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: .6; }
+    100% { opacity: 1; }
+ }
 
 
   @media (min-width: 750px) {

@@ -38,6 +38,7 @@ const MailingWrap = styled(Wrap)`
     font-size: 16px;
     font-family: "Nimbus Sans L", Helvetica, Arial, sans-serif;
     border-radius: 0;
+    appearance: none;
   }
   input:focus {
     outline: none;
