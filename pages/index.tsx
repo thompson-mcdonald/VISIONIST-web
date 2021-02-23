@@ -80,7 +80,7 @@ function Home({ events }): JSX.Element {
             <iframe
               width="100%"
               height="300"
-              src="https://www.youtube.com/embed/ducIhpBjrWs?playlist=ducIhpBjrWs&controls=0&loop=1"
+              src="https://www.youtube.com/embed/zHU3nbUlK3Q?playlist=zHU3nbUlK3Q&controls=0&loop=1"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
