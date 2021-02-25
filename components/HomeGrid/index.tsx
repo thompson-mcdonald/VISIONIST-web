@@ -8,7 +8,7 @@ export const GridOuter = styled.div`
     width: 100vw;
     height: 100vh;
     grid-template-areas:
-      "facebook center  ig-tw"
+      "spotify center  ig-tw"
       "spotify center slideshow"
       "buy-links center bottom-right";
   }

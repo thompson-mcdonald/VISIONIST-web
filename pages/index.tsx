@@ -100,7 +100,6 @@ function Home({ events }): JSX.Element {
           <Instagram />
           <Twitter />
         </Wrap>
-        <Facebook />
         <SlideShow className="slideshow" />
         {isDesktop && (
           <Wrap
