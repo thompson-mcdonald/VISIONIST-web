@@ -89,10 +89,10 @@ const StyledA = styled.a`
 `;
 
 const CloseButton = styled.a`
-  // position: fixed;
+  // position: fixed;position
   z-index: 7;
-  // top: auto;
-  // position: fixed;
+  // top: auto;top
+  // position: fixed;position
   visibility: hidden;
   transition: opacity 0.25s;
   &:link,
@@ -106,8 +106,8 @@ const CloseButton = styled.a`
   }
   @media (min-width: 950px) {
     &.active {
-      // position: absolute;
-      // top: 0;
+      // position: absolute;position
+      // top: 0;top
     }
   }
 `;
@@ -137,8 +137,12 @@ function About(): JSX.Element {
         <AboutWrap className={opened ? "active" : ""}>
           <h2>
             Manager:{" "}
-            <a href="mailto:simon@day-one.net" rel="noreferrer" target="_blank">
-              simon@day-one.net
+            <a
+              href="mailto:info@visionist.live"
+              rel="noreferrer"
+              target="_blank"
+            >
+              info@visionist.live
             </a>
           </h2>
           <h2>
